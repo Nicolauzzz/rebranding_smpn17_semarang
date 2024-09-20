@@ -23,15 +23,15 @@ Route::get('/lomba', function () {
 });
 
 Route::get('/pengaduan', function () {
-    return view('perpustakaan');
+    return view('pengaduan');
 });
 
 Route::get('/perpustakaan', function () {
     return view('perpustakaan');
 });
 
-Route::get('/ppdb', function () {
-    return view('prestasi');
+Route::get('https://ppd.semarangkota.go.id/', function () {
+    return view('https://ppd.semarangkota.go.id/');
 });
 
 Route::get('/prestasi', function () {
