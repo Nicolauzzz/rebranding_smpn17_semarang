@@ -54,7 +54,7 @@
                 <!-- Google Maps -->
                 <div class="my-6 flex flex-col items-center justify-center">
                     <h3 class="text-xl font-semibold mb-4 text-center"> <br>Lokasi SMP Negeri 17 Semarang</h3>
-                    <div id="map" style="height: 500px; width: 100%; max-width : 300px;  margin:50px auto;"></div>
+                    <div id="map" style="height: 450px; width: 100%; max-width : 1100px;  margin:50px auto;"></div>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@
             map: map,
         });
     }
-</script>
+</script>      
 
 </body>
 </html>

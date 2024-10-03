@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('beranda');
+    return view('berandaasli');
 });
 
 Route::get('/berita', function () {
@@ -41,3 +41,16 @@ Route::get('/prestasi', function () {
 Route::get('/profil', function () {
     return view('profil');
 });
+
+Route::get('/profil-sekolah', function () {
+    return view('profil-sekolah');
+})->name('profil-sekolah');
+
+Route::get('/profil-guru', function () {
+    return view('profil-guru');
+})->name('profil-guru');
+
+Route::get('/profil-siswa', function () {
+    return view('profil-siswa');
+})->name('profil-siswa');
+

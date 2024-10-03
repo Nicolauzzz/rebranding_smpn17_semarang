@@ -7,11 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Beranda SMPN 17 Semarang</title>
-</head>
-<body class="h-full bg-gray-100">
-<div class="min-h-full">
-    <!-- Navbar -->
+    <title>Profil SMPN 17 Semarang</title>
     <nav class="bg-white" x-data="{ isOpen: false }">
         <div class="mx-auto max-w-10xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
@@ -45,14 +41,14 @@
                                     <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&w=256&h=256&q=80" alt="User profile">
                                 </button>
                             </div>
-                            <div x-show="isOpen"
-                                 x-transition:enter="transition ease-out duration-100 transform"
-                                 x-transition:enter-start="opacity-0 scale-95"
-                                 x-transition:enter-end="opacity-100 scale-100"
-                                 x-transition:leave="transition ease-in duration-75 transform"
-                                 x-transition:leave-start="opacity-100 scale-100"
-                                 x-transition:leave-end="opacity-0 scale-95"
-                                 class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
+                            <div  x-show="isOpen"
+                                  x-transition:enter="transition ease-out duration-100 transform"
+                                  x-transition:enter-start="opacity-0 scale-95"
+                                  x-transition:enter-end="opacity-100 scale-100"
+                                  x-transition:leave="transition ease-in duration-75 transform"
+                                  x-transition:leave-start="opacity-100 scale-100"
+                                  x-transition:leave-end="opacity-0 scale-95"
+                                  class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700">Profile</a>
                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700">Settings</a>
                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700">Sign out</a>
@@ -75,7 +71,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-
                 </div>
             </div>
         </div>
@@ -97,22 +92,41 @@
 
     <!-- footer -->
 
+
     <!-- Header -->
     <header class="bg-blue-950" style="box-shadow: 0 -5px 25px -5px rgba(36,83,253,0.5);">
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-white">Selamat Datang Di Laman Galeri</h1>
+            <h1 class="text-3xl font-bold tracking-tight text-white">Selamat Datang di Laman Profil Guru dan Tenaga Kependidikan</h1>
         </div>
     </header>
+
+    <nav class="bg-gray-100 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex space-x-4 py-4">
+                <a href="/profil" class="text-gray-700 hover:text-blue-850 font-medium">Profil Sekolah</a>
+                <a href="/profil-guru" class="text-gray-700 hover:text-blue-700 font-medium">Profil Guru dan Tenaga Kependidikan</a>
+                <a href="/profil-siswa" class="text-gray-700 hover:text-blue-700 font-medium">Profil Siswa SMPN 17 Semarang</a>
+            </div>
+        </div>
+    </nav>
+</head>
+<body class="h-full bg-gray-100">
+<div class="min-h-full">
+    <!-- Navbar -->
+
+
+
 
     <!-- Main content -->
     <main>
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <!-- Your content goes here -->
-            <p class="text-gray-700">Selamat datang di laman beranda SMP Negeri 17 Semarang.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            </div>
         </div>
     </main>
 </div>
-<footer class="bg-gray-50">
+<footer    class="bg-gray-50">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
         <div class="sm:flex sm:items-center sm:justify-between">
             <div class="flex justify-center text-teal-600 sm:justify-start">
@@ -127,7 +141,6 @@
         </div>
     </div>
 </footer>
-
 <script>
     // Dapatkan semua link navigasi
     const links = document.querySelectorAll('.nav-link');
@@ -142,6 +155,5 @@
         }
     });
 </script>
-
 </body>
 </html>
