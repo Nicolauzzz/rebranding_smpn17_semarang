@@ -8,13 +8,19 @@
     @vite('resources/css/app.css')
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Profil SMPN 17 Semarang</title>
+
 </head>
 <body class="h-full bg-gray-100">
 <div class="min-h-full">
     <!-- Navbar -->
-
     <x-navbar></x-navbar>
-    <x-header></x-header>
+    <div>
+        <header class="bg-blue-950" style="box-shadow: 0 -5px 25px -5px rgba(36,83,253,0.5);">
+            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold tracking-tight text-white">Selamat Datang di Laman Profil Sekolah</h1>
+            </div>
+        </header>
+    </div>
     <x-sub-navbar></x-sub-navbar>
 
     <!-- Main content -->

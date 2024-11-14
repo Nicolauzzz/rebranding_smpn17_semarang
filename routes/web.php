@@ -1,14 +1,14 @@
 <?php
 
+use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('berandaasli');
-});
+// Public route for the Beranda page
+Route::get('/', [BerandaController::class, 'index'])->name('beranda');
 
-Route::get('/berita', function () {
-    return view('berita');
-});
+// Admin routes (protected by authentication)
+
 
 Route::get('/galeri', function () {
     return view('galeri');
@@ -30,8 +30,8 @@ Route::get('/perpustakaan', function () {
     return view('perpustakaan');
 });
 
-Route::get('https://ppd.semarangkota.go.id/', function () {
-    return view('https://ppd.semarangkota.go.id/');
+Route::get('/ppdb', function () {
+    return view('ppdb');
 });
 
 Route::get('/prestasi', function () {
@@ -42,15 +42,7 @@ Route::get('/profil', function () {
     return view('profil');
 });
 
-Route::get('/profil-sekolah', function () {
-    return view('profil-sekolah');
-})->name('profil-sekolah');
-
 Route::get('/profil-guru', function () {
     return view('profil-guru');
-})->name('profil-guru');
-
-Route::get('/profil-siswa', function () {
-    return view('profil-siswa');
-})->name('profil-siswa');
+});
 
